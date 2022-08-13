@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #eee;
+}
+
+#toDoList {
+    display: flex;
+    flex-direction: column;
+}
+
+#toDoForm {
+    margin-bottom: 10px;
+}
+
+#inputToDo {
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 13px;
+    height: 25px;
+    width: 10rem;
+    background-color: #eee;
+    margin-right: 5px;
+}
+
+#inputToDo:hover {
+    border: 1px solid #666;
+}
+
+#inputToDo:focus {
+    border: 2px solid black;
+}
+
+#addingToDo {
+    border: 1px solid #66c4ff;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #66c4ff;
+    background-color: rgb(225, 243, 255);
+    cursor: pointer;
+    height: 30px;
+}
+
+#addingToDo:hover{
+    border: 2px solid #66c4ff;
+    
+}
+
+#tasks {
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.item {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.itemLabel {
+    font-size: 13px;
+}
+
+.item:checked + label {
+    text-decoration: line-through;
+    color: #bbb;
+}
